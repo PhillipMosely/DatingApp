@@ -20,6 +20,7 @@ import { appRoutes } from './routes';
 import { MemberCardComponent } from './members/member-card/member-card.component';
 import { MemberDetailComponent } from './members/member-detail/member-detail.component';
 import { MemberDetailResolver } from './_resolvers/member-detail.resolver';
+import { MemberListResolver } from './_resolvers/member-list.resolver';
 
 export function tokenGetter() {
    return localStorage.getItem('token');
@@ -64,6 +65,7 @@ export class CustomHammerConfig extends HammerGestureConfig  {
       AuthService,
       ErrorInterceptorProvider,
       MemberDetailResolver,
+      MemberListResolver,
       MemberListComponent,
       { provide: HAMMER_GESTURE_CONFIG, useClass: CustomHammerConfig }
    ],
