@@ -1,4 +1,5 @@
 using System;
+using datingapp.api.Models;
 
 namespace datingapp.api.Dtos
 {
