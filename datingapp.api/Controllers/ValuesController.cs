@@ -10,7 +10,6 @@ using Microsoft.AspNetCore.Authorization;
 namespace datingapp.api.Controllers
 {
     // GET http://localhost:5000/api/values/5
-    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
